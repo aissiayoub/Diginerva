@@ -1,0 +1,105 @@
+@import "../../app.component.scss";
+
+.contact-content {
+    padding: 45px 5%;
+    width: 100%;
+    background-color: $dark-blue;
+    color: $light-grey;
+    display: flex;
+    flex-direction: column;
+
+
+    .title {
+        text-align: center;
+        font-size: 2.7rem;
+        margin: 0;
+
+        .orange-text {
+            color: $orange;
+        }
+
+        .point {
+            color: $orange;
+        }
+    }
+
+    .text-section {
+        margin: 0;
+        align-self: center;
+        margin-left: -3%;
+        margin-top: 20px;
+
+        .text {
+            font-size: 1.15rem;
+            margin: 0;
+            line-height: 1.5;
+        }
+    }
+
+    .interests-section {
+        margin: 40px 0;
+
+        .interestTitle {
+            text-align: center;
+            margin-top: 55px;
+            margin-bottom: 25px;
+        }
+
+        .iterestItems {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+
+            .interestOption {
+                font-weight: 550;
+                color: $dark-blue;
+                background-color: $light-grey;
+                padding: 8px 23px;
+                border-radius: 15px;
+            }
+        }
+    }
+
+    .contact-title {
+        margin-top: 55px;
+        text-align: center;
+
+        .orange-text {
+            color: $orange;
+        }
+
+        .point {
+            color: $orange;
+        }
+    }
+
+    .contact-infos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+
+        .info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .icon {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .contact-content {
+        .text-section {
+            text-align: center;
+            margin-top: 25px;
+        }
+    }
+}

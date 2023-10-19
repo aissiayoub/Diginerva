@@ -1,0 +1,294 @@
+{
+    "common": {
+        "language": "English",
+        "lang": "EN",
+        "discover_more": "Discover more"
+    },
+    "header": {
+        "home": "Home",
+        "about": "About us",
+        "services": "Services",
+        "contact": "Contact",
+        "strategy": "Our strategy"
+    },
+    "footer": {
+        "desc": "Contact us to begin working on your",
+        "project": " project",
+        "copyright": "All rights reserved",
+        "send": "Send",
+        "useful-link": {
+            "terms": "Terms of use",
+            "policy": "Privacy policy",
+            "security": "Security"
+        },
+        "form": {
+            "full_name": "Full name",
+            "phone_number": "Phone number",
+            "email": "Email",
+            "message": "Message"
+        }
+    },
+    "pages": {
+        "home": {
+            "title": "Digital Acceleration",
+            "description": "Diginerva is a consulting firm, with, as a main mission, the acceleration of digital transformation projects of its clients in Morocco and then on a wider scale in the African continent. This mission concerns more projects on advanced technologies such as web, mobile, UX / UI, Cybersecurity, Digital marketing and Business consulting.",
+            "btns": {
+                "become_client": "Become client",
+                "join_us": "Join us",
+                "sponsor_us": "Sponsor us"
+            },
+            "infos": {
+                "title": {
+                    "our_vision": "Our vision",
+                    "our_mission": "Our mission"
+                },
+                "description": {
+                    "our_vision": "Our vision is for Morocco to be a leader in Africa by leveraging the latest digital technologies to improve the lives of our clients and create sustainable economic development. We strive to bring together the most innovative minds to foster an innovative and dynamic digital culture.",
+                    "our_mission": "Our mission is to support our customers in order to transform and manage their business in the digital age in different aspects: production, customer service, marketing, finance, human resources, including internal communication and interactions with stakeholders of the company (prospects, customers, employees, shareholders, suppliers, etc.). The aim is to integrate and use technology to remove the blocking points or difficulties encountered by our customers in order to improve their services and productivity."
+                }
+            },
+            "our_services": "Our Services",
+            "services": {
+                "title": {
+                    "it_consulting": "IT Consulting",
+                    "technology": "Technology",
+                    "solutions_integration": "Solutions Integration",
+                    "cybersecurity": "Cybersecurity",
+                    "digital_marketing": "Digital Marketing"
+                },
+                "description": {
+                    "it_consulting": "In order to allow you a perennial, successful and sustainable digital transformation, we accompany you in defining your digital strategy and share with you the best practices conducive to the emergence of innovative ideas for the implementation of the latter.",
+                    "technology": "Based on the latest technologies, we will help you design and develop the best solutions and applications for specific cases.",
+                    "solutions_integration": "We support you in all phases of your integrated business management solutions project.",
+                    "cybersecurity": "Modern threats are complex and must be taken very seriously. A single data breach or ransomware attack can cause enormous financial, legal and reputational damage. To help our clients protect themselves, Offensive security consultants are ready to audit your information system.",
+                    "digital_marketing": "Digital marketing changes everything : commerce, culture and community. We work right at the meeting point of new tech and new ideas to create strategic and powerful business channels and campaigns that take you to the right audience, growing your brand and bringing revenue home."
+                }
+            },
+            "join_us": {
+                "description": "Join a large community of talents and boost your career.",
+                "btn": "Join Us"
+            },
+            "our_talents": {
+                "title": "Our Talents",
+                "description": "Our team is composed of a diverse group of talents with a range of business, technical and functional abilities. We strive to create innovative and creative solutions to achieving the best possible outcomes for our clients. "
+            },
+            "our_articles": {
+                "title": "Our Articles",
+                "read_more": "Read more"
+            }
+        },
+        "about_us": {
+            "our_values": {
+                "title": "Our values",
+                "description": "At Diginerva, we value trust, sustainability, transparency, agility and boldness. We've built these tenants into the DNA of our company.",
+                "values": {
+                    "value1": {
+                        "title": {
+                            "innovation": "Innovation"
+                        },
+                        "description": {
+                            "innovation": "Our solutions are simple, clear, unique and above all effective. The objective is to offer clients accessible solutions and bring real added value to the market."
+                        }
+                    }
+                }
+            },
+            "meet_our_team": {
+                "title": "Meet Our Team",
+                "team": {
+                    "team_name": {
+                        "team_name1": "Adil El Nassiri",
+                        "team_name2": "Adil El Nassiri",
+                        "team_name3": "Adil El Nassiri",
+                        "team_name4": "Adil El Nassiri",
+                        "team_name5": "Adil El Nassiri",
+                        "team_name6": "Adil El Nassiri"
+                    },
+                    "job": {
+                        "software_engineer": "Software Engineer"
+                    }
+                }
+            },
+            "join_our_team": {
+                "title": "Join our team",
+                "description": "Diginerva is a consulting company, with the main mission the acceleration of digital transformation projects of its clients in Morocco and then the scale of the African continent.",
+                "join_us": "Join us"
+            },
+            "missions": {
+                "title": {
+                    "our_mission": "Our mission is the",
+                    "acceleration": "acceleration",
+                    "of": "of",
+                    "digital": "digital transformation"
+                },
+                "description": {
+                    "diginerva": "Diginerva is a consulting company, with the main mission the",
+                    "acceleration": "acceleration of digital transformation projects of its clients in",
+                    "morocco": " Morocco and then the scale of African continent "
+                }
+            },
+            "story": {
+                "title": "Our story",
+                "description": {
+                    "paragraph1": "Diginerva is a consulting company, with the main mission the acceleration of digital transformation projects of its clients in  Morocco and then the scale of African continent",
+                    "paragraph2": "Diginerva is a consulting company, with the main mission the acceleration of digital transformation projects of its clients in  Morocco and then the scale of African continent. Diginerva is a consulting company, with the main mission the acceleration of digital transformation projects of its clients in  Morocco and then the scale of African continent",
+                    "paragraph3": "Diginerva is a consulting company, with the main mission the acceleration of digital transformation projects of its clients in  Morocco and then the scale of African continent"
+                }
+            }
+        },
+        "our_strategy": {
+            "discovring": {
+                "title": "Discover Our Strategy",
+                "description": "At Diginerva, we value trust, sustainability, transparency, agility and boldness.",
+                "cards": {
+                    "card_title": "Make your strategy"
+                }
+            },
+            "strategy": {
+              "card1":{
+                "title": {
+                    "business_plan": "Create a business plan"
+                },
+                "description": {
+                    "business_plan": "Your business description is one of the most important elements of your business plan because it introduces the goals and possibilities"
+                }
+              },
+              "card2":{
+                "title": {
+                    "business_plan": "Create a business plan"
+                },
+                "description": {
+                    "business_plan": "Your business description is one of the most important elements of your business plan because it introduces the goals and possibilities"
+                }
+              },
+              "card3":{
+                "title": {
+                    "business_plan": "Create a business plan"
+                },
+                "description": {
+                    "business_plan": "Your business description is one of the most important elements of your business plan because it introduces the goals and possibilities"
+                }
+              },
+              "card4":{
+                "title": {
+                    "business_plan": "Create a business plan"
+                },
+                "description": {
+                    "business_plan": "Your business description is one of the most important elements of your business plan because it introduces the goals and possibilities"
+                }
+              },
+              "card5":{
+                "title": {
+                    "business_plan": "Create a business plan"
+                },
+                "description": {
+                    "business_plan": "Your business description is one of the most important elements of your business plan because it introduces the goals and possibilities"
+                }
+              }
+            },
+            "our_mission": {
+                "title": "Our mission",
+                "paragraph1": "Our mission is to support our customers in order to transform and manage their business in the digital age in different aspects: production, customer service, marketing, finance, human resources, including internal communication and interactions with stakeholders of the company (prospects, customers, employees, shareholders, suppliers, etc.).",
+                "paragraph2": "The aim is to integrate and use technology to remove the blocking points or difficulties encountered by our customers in order to improve their services and productivity."
+            },
+            "our_vision": {
+                "title": "Our vision",
+                "paragraph1": "Our vision is for Morocco to be a leader in Africa by leveraging the latest digital technologies to improve the lives of our clients and create sustainable economic development.",
+                "paragraph2": "We strive to bring together the most innovative minds to foster an innovative and dynamic digital culture."
+            }
+        },
+        "contact": {
+            "title": {
+                "connect": "Connect with",
+                "diginerva": "DIGINERVA"
+            },
+            "description":{
+                "text1":"Connect with us today!",
+                "text2":"Let's start a conversation and make things happen together."
+            },
+            "interested_by":{
+                "title":"If you are interested by",
+                "items":{
+                    "cyber_security":"Cyber Security",
+                    "graphic_design":"Graphic Design",
+                    "consulting":"Consulting",
+                    "mobile_dev":"Mobile Dev",
+                    "ui_design":"UI Design"
+                }
+            },
+            "title2":{
+                "feel_free":"Feel free to",
+                "connect":"CONNECT",
+                "with_us":"with US"
+            },
+            "form": {
+                "full_name":{
+                    "label":"Full Name",
+                    "input_placeholder":"Enter your full name"
+                },
+                "phone_number":{
+                    "label":"Phone",
+                    "input_placeholder":"Enter phone number"
+                },
+                "message":{
+                    "label":"Message",
+                    "input_placeholder":"Please feel free to explain your specific needs!"
+                },
+                "btn_submit":"Send"
+            }
+        },
+        "generic_service":{
+            "hero":{
+                "title":{
+                    "make":"Make your",
+                    "apps":"apps Secure",
+                    "with_us":"with us"
+                },
+                "description":{
+                    "modern":"Modern threats are complex and must be taken very",
+                    "seriously":"seriously"
+                },
+                "btn":"Get started"
+            },
+            "cyber_threat":{
+               "title":"Be aware of Cyber Threats",
+               "description":{
+                "paragraph1":"Modern threats are complex and must be taken very seriously.",
+                "paragraph2":"A single data breach or ransomware attack can cause enormous financial, legal and reputational damage.",
+                "paragraph3":"To help our clients protect themselves, Offensive security consultants are ready to audit your information system."
+               }
+            },
+            "security_cards":{
+                "card1":{
+                    "title":"Mobile Security",
+                    "description":{
+                        "paragraph1":"Often overLooked, mobile devices such as tablets and smartphones have access to corporate data, exposing business to threats from malicious apps, zero-day, phishing, and IM (Instant Messaging) attacks.",
+                        "paragraph2":{
+                            "underline":"Mobile security",
+                            "text":"Mobile security prevents these attacks and secures the operating systems and devices from rooting and jailbreaking. When included with an MDM (Mobile Device Management) solution, this enables enterprise to ensure only compliant mobile devices have access to corporate assets."
+                        }
+                    }
+                },
+                "card2":{
+                    "title":"Zero Trust",
+                    "description":{
+                        "paragraph1":"The traditional security model is perimeter-focused, building walls around an organization's valuable assets like a castle. However, this approach has several issues, such as the potential for insider threats and the rapid dissolution of the network perimeter",
+                        "paragraph2":{
+                            "underline":"Zero trust",
+                            "text":"As corporate assets move off-premises as part of cloud adoption and remote work, a new approach to security is needed. Zero trust takes a more granular approach to security, protecting individual resources through a combination of micro-segmentation, monitoring, and enforcement of role-based access controls."
+                        }
+                    }
+                },
+                "card3":{
+                    "title":"Mobile Security",
+                    "description":{
+                        "paragraph1":"Often overLooked, mobile devices such as tablets and smartphones have access to corporate data, exposing business to threats from malicious apps, zero-day, phishing, and IM (Instant Messaging) attacks.",
+                        "paragraph2":{
+                            "underline":"Mobile security",
+                            "text":"Mobile security prevents these attacks and secures the operating systems and devices from rooting and jailbreaking. When included with an MDM (Mobile Device Management) solution, this enables enterprise to ensure only compliant mobile devices have access to corporate assets."
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

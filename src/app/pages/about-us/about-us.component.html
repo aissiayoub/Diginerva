@@ -1,0 +1,26 @@
+<div class="about-us">
+  <app-hero-about-us></app-hero-about-us>
+  <app-our-story></app-our-story>
+  <div class="meet-our-team">
+    <hr class="ligne" />
+    <h2>{{ "pages.about_us.meet_our_team.title" | translate }}</h2>
+    <div class="team-cards">
+      <div class="one-card" *ngFor="let item of miniTeam">
+        <app-mini-team-card [team_name]="item.team_name" [job]="item.job" [pathImage]="item.imagePath"></app-mini-team-card>
+      </div>
+    </div>
+    <hr class="ligne" />
+  </div>
+  <div class="values-section">
+    <h2 class="title">{{ "pages.about_us.our_values.title" | translate }}</h2>
+    <p class="description"> {{ "pages.about_us.our_values.description" | translate }}</p>
+    <div class="values-items">
+      <div *ngFor="let item of values">
+        <app-value [title]="item.title" [description]="item.description" [imagePath]="item.imagePath"></app-value>
+      </div>
+    </div>
+  </div>
+  <div class="join-our-team">
+    <app-join-our-team></app-join-our-team>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+    <div class="mission">
+        <div class="mission">
+            <h2 class="mission-center">
+                <span class="orange-text">{{ 'pages.about_us.missions.title.our_mission' | translate }}</span>
+                <span>&nbsp;</span>
+                <span>{{ 'pages.about_us.missions.title.acceleration' | translate }}</span><br>
+                <span class="orange-text">{{ 'pages.about_us.missions.title.of' | translate }}</span>
+                <span>&nbsp;</span>
+                <span>{{ 'pages.about_us.missions.title.digital' | translate }}</span>
+                <strong class="point">.</strong>
+            </h2>
+            <p class="center-text">
+                <ng-container *ngIf="!isMobile; else noBreak">
+                    <span>{{ 'pages.about_us.missions.description.diginerva' | translate }}</span><br>
+                    <span>{{ 'pages.about_us.missions.description.acceleration' | translate }}</span><br>
+                    <span>{{ 'pages.about_us.missions.description.morocco' | translate }}</span><br>
+                </ng-container>
+                <ng-template #noBreak>
+                    <span>{{ 'pages.about_us.missions.description.diginerva' | translate }}
+                    {{ 'pages.about_us.missions.description.acceleration' | translate }}
+                    {{ 'pages.about_us.missions.description.morocco' | translate }}</span>
+                </ng-template>
+            </p>
+
+        </div>
+
+
+        <div class="img-container" [class.img-container-mobile]="isVerticalDisplay">
+            <img *ngFor="let imagePath of imagePaths; let i = index" [src]="imagePath" alt="image"
+                [class.image]="true"
+                [class.no-margin]="i === 0"
+                [class.with-margin]="i === 2"
+                [class.no-border-radius-left]="i === 0"
+                [class.no-border-radius-right]="i === 2"
+                [class.zoom-in]="zoomStates[i]"
+                (mouseenter)="zoomInImage(i)"
+                (mouseleave)="zoomOutImage(i)"
+                    >
+        </div>
+
+    </div>
+

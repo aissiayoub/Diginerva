@@ -1,0 +1,30 @@
+<div class="contact-content">
+    <h1 class="title">
+        <span class="orange-text">{{ "pages.contact.title.connect" | translate }}</span>
+        <span> {{ "pages.contact.title.diginerva" | translate }}</span>
+        <strong class="point">.</strong>
+    </h1>
+    <div class="text-section">
+        <p class="text">{{ "pages.contact.description.text1" | translate }}</p>
+        <p class="text">{{ "pages.contact.description.text2" | translate }}</p>
+    </div>
+    <div class="interests-section">
+        <h2 class="interestTitle">{{ "pages.contact.interested_by.title" | translate }}</h2>
+        <div class="iterestItems">
+            <span *ngFor="let item of InterestItems" class="interestOption">{{item.title | translate}}</span>
+        </div>
+    </div>
+    <h1 class="contact-title">
+        <span>{{ "pages.contact.title2.feel_free" | translate }}</span>
+        <span class="orange-text"> {{ "pages.contact.title2.connect" | translate }}</span>
+        <span> {{ "pages.contact.title2.with_us" | translate }}</span>
+        <strong class="point">.</strong>
+    </h1>
+    <div class="contact-infos">
+        <div *ngFor="let contactInfo of contactInfos" class="info">
+            <img [src]="contactInfo.icon" alt="icon" class="icon">
+            <span> {{contactInfo.info}}</span>
+        </div>
+    </div>
+</div>
+<app-contact-form></app-contact-form>

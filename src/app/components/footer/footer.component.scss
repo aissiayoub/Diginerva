@@ -1,0 +1,195 @@
+@import "../../app.component.scss";
+
+.footer {
+  background: $dark-blue;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  .footer-left {
+    // background-color: red;
+    margin-top: 2%;
+    margin-left: 5%;
+    color: $light-grey;
+    font-size: 2.5vw;
+    width: 38%;
+
+    .point {
+      color: $orange;
+    }
+  }
+
+  .footer-right {
+    .footer-form {
+      margin-top: 5%;
+
+      mat-label {
+        color: $light-grey;
+      }
+      .form-field{
+        width: 90%;
+      }
+      .phone-number-field {
+        width: 42%;
+        margin-left: 3%;
+      }
+
+      .email-field {
+        width: 42%;
+         margin-right: 3%;
+      }
+
+      ::ng-deep.mat-form-field-underline {
+        background-color: $light-grey !important;
+      }
+
+      ::ng-deep.mat-form-field-ripple {
+        background-color: $orange !important;
+      }
+
+      .submit-form {
+        background: $orange;
+        color: $light-grey;
+        margin-bottom: 15px !important;
+      }
+    }
+  }
+}
+
+.lower-footer {
+  .navbar {
+    background: $dark-blue;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    a {
+      text-decoration: none;
+    }
+
+    .nav-item,
+    .lang-item {
+      font-size: 1vw;
+      color: $light-grey;
+      margin-right: 5px;
+    }
+
+    .nav-item:hover,
+    .nav-item.active,
+    .lang-item:hover,
+    .lang-item.active {
+      color: $orange;
+      text-decoration: none;
+    }
+
+    #lang-item {
+      flex-direction: row-reverse;
+    }
+
+    .copyrights {
+      color: $light-grey;
+      font-size: 1vw;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .footer {
+    .footer-right {
+      margin-top: 1%;
+      margin-left: 5%;
+      .footer-form{
+        .form-field{
+          width: 90%;
+        }
+        .phone-number-field,.email-field{
+          width: 42%;
+        }
+      }
+    }
+
+    .footer-left {
+       margin-left: 11%;
+      margin-right: 2%;
+    }
+  }
+
+  .lower-footer {
+    .navbar {
+      .navbar-items {
+        a {
+          font-size: 75%;
+        }
+      }
+
+      .copyrights {
+        font-size: 75%;
+      }
+    }
+  }
+}
+// @media (min-width:769px) and (max-width:940px){
+// .footer{
+//   .footer-right{
+//     .footer-form{
+//       .form-field{
+//         width: 92%;
+//       }
+//     }
+//   }
+// }
+// }
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+
+    .footer-right {
+      margin-left: 17%;
+      margin-bottom: 2%;
+      .footer-form{
+        .form-field{
+          width: 80%;
+        }
+        .email-field,.phone-number-field{
+          width: 37%;
+        }
+      }
+    }
+
+    .footer-left {
+      margin-left: 30%;
+      font-size: large;
+    }
+  }
+
+  .lower-footer {
+    .navbar {
+      display: inline-grid;
+      padding-bottom: 144px;
+      justify-content: center;
+
+      .navbar-items {
+        margin-top: 2%;
+        grid-template-columns: repeat(1, 1fr);
+        display: inline-grid;
+      }
+
+      .copyrights {
+        width: 193px;
+        margin-top: 2%;
+      }
+    }
+  }
+}
+
+@media (max-width:550px) {
+  .footer {
+    .footer-right {
+      .footer-form {
+        .phone-number-field,.email-field{
+          margin-left: 0;
+          width: 80%;
+        }
+      }
+    }
+  }
+}

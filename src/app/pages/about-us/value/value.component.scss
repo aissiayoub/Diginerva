@@ -1,0 +1,64 @@
+@import "../../../app.component.scss";
+
+.value-item {
+  margin: 5px;
+  padding: 10px;
+  margin-left: calc(15% + 45px);
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    background-color: $navy-blue;
+    padding: 5px;
+    box-sizing: content-box;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    animation: move-item 5s infinite alternate-reverse;
+  }
+
+  .item-title {
+    margin: 0;
+    margin-top: 8px;
+  }
+
+  .item-description {
+    margin-top: 12px;
+    width: 75%;
+    color: $light-grey !important;
+  }
+}
+
+@keyframes move-item {
+  0%,
+  50%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  25%,
+  75% {
+    transform: translate(0, -5px);
+  }
+}
+
+@media (max-width: 920px) {
+  .value-item {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .value-item {
+    margin-left: 0;
+    .item-description {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 363px) {
+  .value-item {
+    .item-description {
+      width: 100%;
+    }
+  }
+}

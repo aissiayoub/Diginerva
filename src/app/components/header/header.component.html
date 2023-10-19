@@ -1,0 +1,65 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<div class="overlay" *ngIf="isMenuOpen" (click)="closeDrawer()"></div>
+<mat-drawer-container [hasBackdrop]="true" [hasBackdrop]="true">
+    <mat-drawer #drawer id="side-nav" mode="push" position="end" [opened]="isMenuOpen" (openedChange)="onMenuOpened($event)" style="height: fit-content; max-height: 100vh;" >
+        <div class="overlay" *ngIf="isMenuOpen" (click)="closeDrawer()"></div>
+        <div class="nav-item-wrapper">
+            <a class="nav-item" [ngClass]="{'active': activeRoute === '/', 'nav-item': true}" mat-button (click)="toggleMenu('/')" routerLink="" id="mat-mdc-button custom-button">{{ "header.home" | translate }}</a><br>
+            <a class="nav-item" [ngClass]="{'active': activeRoute === '/about', 'nav-item': true}" mat-button (click)="toggleMenu('/about')" routerLink="about">{{ "header.about" | translate }}</a><br> 
+            <a class="nav-item" id="strategy-title"[ngClass]="{'active': activeRoute === '/strategy', 'nav-item': true}" mat-button (click)="toggleMenu('/strategy')" routerLink="strategy">{{ "header.strategy" | translate }}</a><br>
+            <a class="nav-item" [ngClass]="{'active': activeRoute === '/services', 'nav-item': true}" mat-button mat-button (click)="toggleMenu('/services')" routerLink="services">{{ "header.services" | translate }}</a><br>
+            <a class="nav-item" [ngClass]="{'active': activeRoute === '/contact', 'nav-item': true}" mat-button mat-button (click)="toggleMenu('/contact')" routerLink="contact">{{ "header.contact" | translate }}</a><br>
+            <button class="nav-item" id="lang-item" mat-button [matMenuTriggerFor]="menu">{{ langUser | uppercase }}
+            <mat-icon aria-hidden="false" aria-label="Example home icon" svgIcon="expand_more"></mat-icon>
+        </button>
+        </div>
+        
+        <mat-menu #menu="matMenu">
+            <button class="lang" mat-menu-item (click)="changeLang('en')">EN</button>
+            <button class="lang" mat-menu-item (click)="changeLang('fr')">FR</button>
+        </mat-menu>
+        
+        <button class="close-button" mat-icon-button (click)="closeDrawer()">
+            <mat-icon aria-hidden="false">close</mat-icon>
+          </button>
+        
+    </mat-drawer>
+
+    <mat-drawer-content>
+        <mat-toolbar class="navbar" *ngIf="pageWidth >= 768">
+            <div class="logo-animation" dir="rtl">
+                <div class="first"></div>
+                <div class="second"></div>
+                <div class="third"></div>
+            </div>
+            <a routerLink="" class="logo-text">DIGINERVA<span class="dot">.</span></a>
+            <div class="spacer"></div>
+            <a class="nav-item" mat-button routerLink="">{{ "header.home" | translate }}</a>
+            <a class="nav-item" mat-button routerLink="about">{{ "header.about" | translate }}</a>
+            <a class="nav-item" mat-button routerLink="strategy">{{ "header.strategy" | translate }}</a>
+            <a class="nav-item" mat-button routerLink="services">{{ "header.services" | translate }}</a>
+            <a class="nav-item" mat-button routerLink="contact">{{ "header.contact" | translate }}</a>
+            <button class="nav-item" id="lang-item" mat-button [matMenuTriggerFor]="menu">{{ "common.lang" | translate }}
+                <mat-icon aria-hidden="false" svgIcon="expand_more"></mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" id="langMenu">
+                <button mat-menu-item (click)="changeLang('en')">EN</button>
+                <button mat-menu-item (click)="changeLang('fr')">FR</button>
+            </mat-menu>
+        </mat-toolbar>
+        <mat-toolbar class="navbar" *ngIf="pageWidth < 768">
+                    <div class="logo-animation" dir="rtl">
+                        <div class="first"></div>
+                        <div class="second"></div>
+                        <div class="third"></div>
+                    </div>
+                    <img src="../../../assets/media/logo-no-text.svg" alt="Logo" class="logo" routerLink="">
+                
+                <div class="spacer"></div>
+                  <a class="mobile-menu" mat-raised-a (click)="toggleMenu()"><mat-icon aria-hidden="false" svgIcon="menu" *ngIf="!isMenuOpen">menu</mat-icon></a>
+            </mat-toolbar>
+    </mat-drawer-content>
+</mat-drawer-container>
+

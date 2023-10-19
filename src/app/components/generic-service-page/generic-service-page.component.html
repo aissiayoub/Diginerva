@@ -1,0 +1,18 @@
+<div class="service-container">
+    <app-hero-service></app-hero-service>
+    <app-threat-awareness></app-threat-awareness>
+    <div class="security-cards">
+        <div class="card" *ngFor="let item of securityDataItems;let i=index">
+            <app-security-info-card 
+                [backgroundClass]="i % 2 === 0 ? 'background-even' : 'background-odd'"
+                [iconPath]="item.iconPath" 
+                [title]="item.title" 
+                [paragraph1]="item.paragraph1"
+                [paragraph2]="item.paragraph2 | translate"
+                [underlineWord]="item.underline_word | translate"></app-security-info-card>
+        </div>
+    </div>
+    <div class="join-our-team">
+        <app-join-our-team></app-join-our-team>
+    </div>
+</div>

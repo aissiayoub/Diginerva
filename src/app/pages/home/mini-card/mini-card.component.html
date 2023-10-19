@@ -1,0 +1,16 @@
+<div class="card" *ngIf="left">
+    <img [src]="pathImage">
+    <div class="info">
+        <h2>{{ title | translate }}</h2>
+        <p>{{ description | translate }}</p>
+        <button mat-button>{{ "common.discover_more" | translate }}<mat-icon aria-hidden="false" svgIcon="long_arrow"></mat-icon></button>
+    </div>
+</div>
+<div class="card second-card" *ngIf="right">
+    <div class="info">
+        <h2>{{ title | translate }}</h2>
+        <p>{{ description | translate }}</p>
+        <button mat-button>{{ "common.discover_more" | translate }}<mat-icon aria-hidden="false" svgIcon="long_arrow"></mat-icon></button>
+    </div>
+    <img [src]="pathImage">
+</div>

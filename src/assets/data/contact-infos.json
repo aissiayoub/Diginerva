@@ -1,0 +1,14 @@
+[
+    {
+        "icon":"../../assets/media/contact/phoneIcon.svg",
+        "info":"06 64 76 87 43"
+    },
+    {
+        "icon":"../../assets/media/contact/Mail.svg",
+        "info":"contact@diginerva.com"
+    },
+    {
+        "icon":"../../assets/media/contact/navigatorIcon.svg",
+        "info":"diginerva.com"
+    }
+]

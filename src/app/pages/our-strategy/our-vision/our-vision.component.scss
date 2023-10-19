@@ -1,0 +1,23 @@
+@import "../../../app.component.scss";
+
+.vision-container {
+    width: 100%;
+    background-color: $dark-blue;
+    padding: 5rem 7.2%;
+    .title{
+        margin: 0;
+        color: $orange;
+    }
+    .content{
+        color: $light-grey;
+        line-height: 1.5;
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width:768px){
+    .vision-container{
+        padding: 5rem 10%;
+    }
+}

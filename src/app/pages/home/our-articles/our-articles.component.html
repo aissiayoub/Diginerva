@@ -1,0 +1,17 @@
+<div class="card">
+    <p-galleria [value]="tab" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '90%', 'margin':'auto'}"> 
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item.path" style="width: 100%; height: 80%" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+            <div class="grid grid-nogutter justify-content-center">
+                <img [src]="item.thumbnails" style="display: block;" />
+            </div>
+        </ng-template>
+        <ng-template pTemplate="caption" let-item>
+            <h4 style="margin-bottom: .5rem; color: #ffffff;">{{ item.title }}</h4>
+            <p>{{ item.caption }}</p>
+            <button class="read-more-btn" mat-button (click)="readArticle(item.articlePath)">{{ "pages.home.our_articles.read_more" | translate }}</button>
+        </ng-template> 
+    </p-galleria>
+</div>

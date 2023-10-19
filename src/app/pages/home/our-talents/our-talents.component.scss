@@ -1,0 +1,68 @@
+@import "../../../app.component.scss";
+
+.talents{
+    .our-talents{
+        padding: 50px;
+        max-width: 100%;
+        margin: auto;
+        box-shadow: $orange 0px 20px 30px -10px;
+        h2, p{
+            color: $light-grey;
+            text-align: center;
+        }
+    }
+    .join-us{
+        height: fit-content;
+        display: flex;
+        padding-left: 100px;
+        align-items: center;
+        .left-side{
+            flex: 1;
+            h2{
+                color: $light-grey;
+            }
+            .join-btn{
+                font-size: 1vw;
+                font-weight: bold;
+                width: 200px;
+                height: 50px;
+                background: $orange;
+                color: $light-grey;
+            }
+        }
+        .right-side{
+            padding-left: 150px;
+            flex: 1;
+            img{
+                width: 19vw;
+                max-width: 250px;
+            }
+        }
+    }
+}
+
+@media (max-width:910px){
+    .talents{
+        .join-us{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-left: 0;
+            margin: auto;
+            .left-side{
+                .join-btn{
+                    font-size: .76rem;
+                }
+            }
+            .right-side{
+                padding-left: 0;
+                img{
+                    align-self: center;
+                    width: 10rem;
+                    max-width: 250px;
+                }
+            }
+        }
+    }
+}

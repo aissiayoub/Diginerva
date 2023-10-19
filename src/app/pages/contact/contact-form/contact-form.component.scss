@@ -1,0 +1,133 @@
+@import "../../../app.component.scss";
+
+.form-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    background-color: $dark-blue;
+    padding-top: 25px;
+    padding-bottom: 35px;
+
+    .container-img {
+        background-color: $navy-blue;
+
+        .img {
+            width: 25rem;
+            height: 100%;
+        }
+    }
+
+
+    .form {
+        padding: 4%;
+        padding-bottom: 40px;
+        background-color: $navy-blue;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        height: fit-content;
+
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            label {
+                color: $light-grey;
+            }
+
+            input,
+            textarea {
+                outline: none;
+                padding: 10px;
+                width: 22rem;
+            }
+
+            textarea {
+                height: 10rem;
+            }
+        }
+
+        .submit-btn {
+            border: none;
+            color: $light-grey;
+            background-color: $orange;
+            justify-self: center;
+            align-self: center;
+            font-size: 1.1rem;
+            padding: 12px;
+            margin-top: 15px;
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0px 0px 10px rgba(222, 131, 77, 0.6);
+        }
+
+        .submit-btn:hover {
+            background-color: #d37b48;
+        }
+    }
+}
+
+
+@media(max-width:840px){
+    .form-section {
+        .container-img {
+            background-color: $navy-blue;
+    
+            .img {
+                width: 19rem;
+                height: 100%;
+            }
+        }
+        .form {
+            padding-bottom: 15px;
+            .form-field {
+    
+                textarea {
+                    height: 5rem;
+                }
+            }
+        }    
+}
+}
+
+@media(max-width:768px) {
+    .form-section {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        .form {
+            width: 70%;
+
+            .form-field {
+
+                input,
+                textarea {
+                    width: 100%;
+                }
+            }
+
+            .submit-btn {
+                font-size: .8rem;
+            }
+        }
+
+        .container-img {
+            background-color: transparent;
+            width: 70%;
+
+            .img {
+                width: 100%;
+            }
+        }
+    }
+}

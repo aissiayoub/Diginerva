@@ -1,0 +1,12 @@
+[
+    {
+        "imagePath":"../../../assets/media/home/infos/our-vision.svg",
+        "title": "pages.home.infos.title.our_vision",
+        "description": "pages.home.infos.description.our_vision"
+    },
+    {
+        "imagePath":"../../../assets/media/home/infos/our-mission.svg",
+        "title": "pages.home.infos.title.our_mission",
+        "description": "pages.home.infos.description.our_mission"
+    }
+]

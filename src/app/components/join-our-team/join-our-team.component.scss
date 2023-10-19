@@ -1,0 +1,65 @@
+@import "../../app.component.scss";
+.join-container {
+  background-color: $light-grey;
+  padding-top: 2%;
+  h2 {
+    margin-left: 15%;
+    margin-top: 0px;
+    font-size: 35px;
+    margin-bottom: 0%;
+    padding-right: 0%;
+    padding-top: 10px;
+    color: $dark-blue;
+  }
+  .body {
+    margin-left: 15%;
+    width: 70%;
+    padding-bottom: 3%;
+
+    p {
+      font-size: 20px;
+      line-height: 1.5;
+      color: $dark-blue;
+    }
+    button {
+      font-size: 16px;
+      border: black solid 1px;
+      height: 50px;
+      width: fit-content;
+      color: $dark-blue;
+      font-weight: bold;
+      display: flex;
+      flex-direction: row-reverse;
+      .fleche {
+        margin-left: 5px;
+      }
+    }
+    .join-btn:hover {
+      color: $light-grey;
+      background-color: $orange;
+    }
+  }
+}
+
+@media (max-width: 936px) {
+  .join-container {
+    h2 {
+      margin-left: 80px;
+      width: 50%;
+      font-size: 33px;
+    }
+    .body {
+      margin-left: 80px;
+    }
+  }
+}
+@media (max-width: 418px) {
+  .join-container {
+    h2 {
+      margin-left: 60px;
+    }
+    .body {
+      margin-left: 60px;
+    }
+  }
+}

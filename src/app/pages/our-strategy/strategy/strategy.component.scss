@@ -1,0 +1,212 @@
+@import "../../../app.component.scss";
+
+.alternating-cards {
+    padding: 45px 0;
+    display: flex;
+    flex-direction: column;
+    background: $dark-blue;
+    position: relative;
+
+    .card {
+        visibility: hidden;
+    }
+}
+
+.visible {
+
+    .card {
+        visibility: visible;
+        width: 50%;
+
+        .content {
+            width: 70%;
+            background-color: $navy-blue;
+            color: white;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            padding: 10px 25px;
+            margin: auto;
+            transition: background-color 0.4s ease-in-out;
+            line-height: 1.5;
+
+            .title {
+                margin-bottom: 7px;
+            }
+
+            .description {
+                margin-top: 0;
+                margin-bottom: 25px;
+                font-weight: 100;
+            }
+        }
+
+        .content:hover {
+            background-color: $orange;
+        }
+    }
+
+    .left {
+        align-self: flex-start;
+        animation: movedown 1s linear forwards;
+        opacity: 0;
+
+        .content {
+            .circle-vertical {
+                position: absolute;
+                content: '';
+                top: 0;
+                right: -9.5px;
+                z-index: 1;
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                background-color: $orange;
+            }
+        }
+    }
+
+    .right {
+        align-self: flex-end;
+        animation: movedown 1s linear forwards;
+        opacity: 0;
+
+        .content {
+            .circle-vertical {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: -5.5px;
+                z-index: 1;
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                background-color: $orange;
+            }
+        }
+    }
+
+    .left:last-child {
+
+        .content::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            right: -9px;
+            z-index: 1;
+            height: 15px;
+            width: 15px;
+            transform: rotate(45deg);
+            background-color: $orange;
+            overflow: hidden;
+        }
+    }
+
+
+
+}
+
+
+
+.visible::after {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 89%;
+    background-color: $orange;
+    left: 50%;
+    animation: moveline 1s linear forwards;
+}
+
+
+
+
+
+.left:nth-child(1) {
+    animation-delay: 0s !important;
+}
+
+.right:nth-child(2) {
+    animation-delay: 1s !important;
+}
+
+.left:nth-child(3) {
+    animation-delay: 2s !important;
+}
+
+.right:nth-child(4) {
+    animation-delay: 3s !important;
+}
+
+.left:nth-child(5) {
+    animation-delay: 4s !important;
+}
+
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: calc(100% - 90px);
+    }
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .alternating-cards {
+        gap: 40px;
+
+        .card {
+            width: 100%;
+
+            .content {
+                width: 80%;
+            }
+        }
+
+        .right {
+            align-self: flex-start;
+
+            .content {
+                .circle-vertical {
+                    left: 10px;
+                }
+            }
+
+        }
+
+        .left {
+            .content {
+                .circle-vertical {
+                    left: .6rem;
+                }
+            }
+        }
+
+        .left:last-child {
+
+            .content::after {
+
+                right: -9px;
+                left: 10px;
+            }
+        }
+    }
+
+    .alternating-cards::after {
+        left: 15px;
+    }
+}

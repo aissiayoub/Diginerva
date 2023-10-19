@@ -1,0 +1,133 @@
+@import "../../app.component.scss";
+.about-us {
+  width: 100%;
+  .meet-our-team {
+    background-color: $light-grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0%;
+    .ligne {
+      width: 70%;
+      padding: auto auto auto;
+      color: $light-grey;
+    }
+    h2 {
+      margin-left: 15%;
+      font-size: 33px;
+      padding-right: 0%;
+      width: 20%;
+      color: $dark-blue;
+    }
+    .team-cards {
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+  }
+
+  .values-section {
+    width: 100%;
+    background: $dark-blue;
+    padding: 25px 65px;
+    color: white;
+
+    .title {
+      font-size: 38px;
+      margin-left: 12%;
+    }
+
+    .description {
+      width: 60%;
+      margin-left: 12%;
+    }
+
+    .values-items {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 3.3rem;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .values-items > * {
+      flex: 1 0 calc(50% - 10px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    .values-section {
+      .description {
+        width: 100%;
+      }
+
+      .values-items > * {
+        flex: 1 0 calc(100% - 10px);
+      }
+    }
+  }
+}
+
+@media (max-width: 1226px) {
+  .about-us .meet-our-team {
+    h2 {
+      font-size: 38px;
+      width: 50%;
+      margin-left: 90px;
+    }
+  }
+}
+@media (max-width: 936px) {
+  .about-us .meet-our-team {
+    h2 {
+      margin-left: 80px;
+    }
+    .team-cards {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
+}
+@media (max-width: 920px) {
+  .about-us {
+    .values-section {
+      .title {
+        margin-left: 25px;
+      }
+      .description {
+        margin-left: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    .values-section {
+      .title {
+        padding: 0 10px;
+        margin-left: 0;
+      }
+      .description {
+        width: 100%;
+        padding: 0 10px;
+        margin-left: 0;
+      }
+
+      .values-items > * {
+        flex: 1 0 calc(100% - 10px);
+      }
+    }
+  }
+}
+
+@media (max-width: 553px) {
+  .about-us .meet-our-team {
+    h2 {
+      margin-left: 50px;
+    }
+  }
+}

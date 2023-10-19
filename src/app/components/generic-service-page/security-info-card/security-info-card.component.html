@@ -1,0 +1,10 @@
+<div class="security-container" [ngClass]="backgroundClass">
+<div class="title-block">
+    <img [src]="iconPath" alt="SecurityIcon" class="icon">
+    <h2 class="title">{{ title | translate}}</h2>
+</div>
+    <p class="paragraph1">
+      {{paragraph1 | translate}}
+    </p>
+    <p  class="paragraph2" [innerHTML]="highlightSpecificWord(paragraph2,underlineWord)"></p>
+</div>

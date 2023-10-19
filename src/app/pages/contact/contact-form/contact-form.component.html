@@ -1,0 +1,23 @@
+<div class="form-section">
+  <div class="container-img">
+    <img [src]="imagePath" alt="imgForm" class="img">
+  </div>
+  <form class="form">
+    <div class="form-field">
+      <label>{{"pages.contact.form.full_name.label" | translate }}</label>
+      <input type="text" placeholder='{{"pages.contact.form.full_name.input_placeholder" | translate }}'>
+    </div>
+    <div class="form-field">
+      <label>{{"pages.contact.form.phone_number.label" | translate }}</label>
+      <input type="tel" placeholder='{{"pages.contact.form.phone_number.input_placeholder" | translate }}'>
+    </div>
+    <div class="form-field">
+      <label>{{"pages.contact.form.message.label" | translate }}</label>
+      <textarea type="area" placeholder='{{"pages.contact.form.message.input_placeholder" | translate }}'></textarea>
+    </div>
+    <button type="submit" class="submit-btn">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" svgIcon="send"></mat-icon>
+      {{"pages.contact.form.btn_submit" | translate }}
+    </button>
+  </form>
+</div>

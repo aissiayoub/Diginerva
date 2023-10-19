@@ -1,0 +1,23 @@
+@import "../../app.component.scss";
+
+.service-container {
+    background-color: $light-grey;
+    width: 100%;
+
+    .join-our-team {
+        margin-left: -2.8%;
+        width: 80%;
+    }
+
+}
+
+@media (max-width:800px) {
+    .service-container {
+        width: 100%;
+
+        .join-our-team {
+            margin-left: -5%;
+            width: 100%;
+        }
+    }
+}

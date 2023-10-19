@@ -1,0 +1,32 @@
+[
+  {
+    "team_name": "pages.about_us.meet_our_team.team.team_name.team_name1",
+    "job": "pages.about_us.meet_our_team.team.job.software_engineer",
+    "imagePath": "../../../assets/media/about-us/our-team/team-photo1.png"
+  },
+  {
+    "team_name": "pages.about_us.meet_our_team.team.team_name.team_name2",
+    "job": "pages.about_us.meet_our_team.team.job.software_engineer",
+    "imagePath": "../../../assets/media/about-us/our-team/team-photo2.png"
+  },
+  {
+    "team_name": "pages.about_us.meet_our_team.team.team_name.team_name3",
+    "job": "pages.about_us.meet_our_team.team.job.software_engineer",
+    "imagePath": "../../../assets/media/about-us/our-team/team-photo3.png"
+  },
+  {
+    "team_name": "pages.about_us.meet_our_team.team.team_name.team_name4",
+    "job": "pages.about_us.meet_our_team.team.job.software_engineer",
+    "imagePath": "../../../assets/media/about-us/our-team/team-photo4.png"
+  },
+  {
+    "team_name": "pages.about_us.meet_our_team.team.team_name.team_name5",
+    "job": "pages.about_us.meet_our_team.team.job.software_engineer",
+    "imagePath": "../../../assets/media/about-us/our-team/team-photo5.png"
+  },
+  {
+    "team_name": "pages.about_us.meet_our_team.team.team_name.team_name6",
+    "job": "pages.about_us.meet_our_team.team.job.software_engineer",
+    "imagePath": "../../../assets/media/about-us/our-team/team-photo6.png"
+  }
+]

@@ -1,0 +1,29 @@
+@import "../../app.component.scss";
+
+.container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: $light-grey;
+    .join-our-team{
+         margin-left: -4.5%;
+        width: 80%;
+    }
+}
+
+
+@media (max-width:936px){
+    .container{
+        .join-our-team{
+            margin-left: -1.5%;
+        }
+    }
+}
+@media (max-width:768px){
+    .container{
+        .join-our-team{
+            margin-left: -4%;
+            width: 100%;
+        }
+    }
+}

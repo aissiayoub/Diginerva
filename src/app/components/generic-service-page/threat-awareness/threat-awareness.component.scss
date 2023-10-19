@@ -1,0 +1,93 @@
+@import "../../../app.component.scss";
+
+.threat-alert-content {
+    background-color: $light-grey;
+    padding: 8rem 5rem 4rem 0;
+    display: flex;
+
+    .left {
+        width: 50%;
+        overflow: hidden;
+
+        .img {
+            width: 95%;
+            height: auto;
+            margin-left: -80px;
+            border-radius: 0 15px 15px 0;
+        }
+    }
+
+    .right {
+        width: 50%;
+
+        .title {
+            font-size: 3.7vw;
+            color: $dark-blue;
+            position: relative;
+        }
+
+        .title::before {
+            position: absolute;
+            content: "";
+            left: -20px;
+            top: 9px;
+            width: 6px;
+            height: 85%;
+            background-color: $orange;
+        }
+
+        .description {
+            font-size: 20px;
+            color: $dark-blue;
+            line-height: 1.5;
+        }
+    }
+
+}
+
+@media(min-width:801px) and (max-width:1080px){
+    .threat-alert-content {
+        .right{
+            .title::before {
+                top: 4px;
+                left: -10px;
+            }
+        }
+    }
+}
+@media (max-width:800px) {
+    .threat-alert-content {
+        flex-direction: column-reverse;
+        gap: 25px;
+        padding: 8rem 1rem 4rem 0;
+
+        .right {
+            width: 100%;
+            padding-left: 1rem;
+
+            .title {
+                font-size: 2.5rem;
+                width: 80%;
+            }
+
+            .title::before {
+                top: 5px;
+                left: -10px;
+            }
+
+            .description {
+                width: 90%;
+                justify-self: center;
+                align-self: center;
+            }
+        }
+
+        .left {
+            width: 100%;
+
+            .img {
+                width: 100%;
+            }
+        }
+    }
+}

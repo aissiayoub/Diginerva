@@ -1,0 +1,22 @@
+[
+    {
+        "title":"pages.generic_service.security_cards.card1.title",
+        "iconPath":"assets/media/generic-service/Online_Security.svg",
+        "paragraph1":"pages.generic_service.security_cards.card1.description.paragraph1",
+        "paragraph2":"pages.generic_service.security_cards.card1.description.paragraph2.text",
+        "underline_word":"pages.generic_service.security_cards.card1.description.paragraph2.underline"
+    },
+    {
+        "title":"pages.generic_service.security_cards.card2.title",
+        "iconPath":"assets/media/generic-service/Online_Security.svg",
+        "paragraph1":"pages.generic_service.security_cards.card2.description.paragraph1",
+        "paragraph2":"pages.generic_service.security_cards.card2.description.paragraph2.text",
+        "underline_word":"pages.generic_service.security_cards.card2.description.paragraph2.underline"
+    },{
+        "title":"pages.generic_service.security_cards.card1.title",
+        "iconPath":"assets/media/generic-service/Online_Security.svg",
+        "paragraph1":"pages.generic_service.security_cards.card1.description.paragraph1",
+        "paragraph2":"pages.generic_service.security_cards.card1.description.paragraph2.text",
+        "underline_word":"pages.generic_service.security_cards.card1.description.paragraph2.underline"
+    }
+]

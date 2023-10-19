@@ -1,0 +1,363 @@
+@import "../../app.component.scss";
+    
+
+#side-nav{
+    background: $dark-blue;
+    a{
+        text-decoration: none;
+    }
+      
+    ::ng-deep .mat-mdc-button {
+        border-radius: 0 !important; 
+        padding: 0;
+      }
+    
+      ::ng-deep #mat-mdc-button\ custom-button {
+        --mat-mdc-button-persistent-ripple-color: transparent;
+        --mat-mdc-button-ripple-color: transparent;
+        color: $light-grey;
+        padding-right: 45px;
+            text-decoration: none;
+            position: relative; 
+            width: calc(100% + 37px);
+            margin-left: -38px;
+            transition: 0.2s;
+
+        &:hover {
+            background-color: #292e3d;
+            color: $orange; 
+            
+          }
+      
+          &:active {
+              background-color: #292e3d;
+              color: $orange; 
+            }
+    }
+
+    .nav-item-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+
+        width: 100%;
+
+        .nav-item {
+            color: $light-grey;
+            padding-right: 45px;
+            text-decoration: none;
+            position: relative; 
+
+            width: calc(100% + 30px); /* Increase the width to cover the animation distance */
+            margin-left: -30px;
+            
+            transition: 0.2s;
+              
+            
+            &:hover {
+              background-color: #292e3d;
+              color: $orange; 
+              
+            }
+        
+            &:active {
+                background-color: #292e3d;
+                color: $orange; 
+              }
+              
+            }
+
+            .active {
+                --mat-mdc-button-persistent-ripple-color: #000;
+                --mat-mdc-button-ripple-color: rgba(0, 0, 0, 0.1);
+                background-color: #292e3d;
+              }
+            #strategy-title{
+                padding-left: 43px;
+            }
+    }  
+    
+    .no-scroll {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+      }
+  
+
+    #lang-item{
+        flex-direction: row-reverse;
+    }
+    &.mat-drawer-push {
+        left: auto;
+        right: 0; 
+      }
+}
+
+
+
+mat-drawer {
+    height: auto !important;
+    a:first-of-type{
+        margin-top: 60px;
+    }
+    mat-menu{
+        margin-top: 50px;
+    }
+}
+
+::ng-deep .mat-drawer-inner-container{
+
+    overflow: hidden !important;
+}
+
+
+mat-drawer-content{
+    height: 100% !important;
+    overflow: hidden;
+
+ }
+
+ ::ng-deep .mat-mdc-icon-button{
+    background-color: $dark-blue !important;
+    --mdc-ripple-color: transparent;
+    --mdc-ripple-hover-opacity: 0;
+    --mat-mdc-button-persistent-ripple-color: transparent;
+    --mat-mdc-button-ripple-color: transparent;
+}
+
+.mat-drawer-push {
+
+    
+    .close-button {
+        position: absolute;
+        top: 10px;
+        z-index: 1;
+        color: $light-grey;
+        background: $dark-blue !important;
+        display: none;
+    }
+
+    .close-button:hover, .close-button.active{
+        color: $orange;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: flex; // Show the menu button by default
+    }
+
+    &.mat-drawer-opened {
+        .mobile-menu {
+            display: none; // Hide the menu button when the drawer is open
+        }
+
+        .close-button {
+            display: flex; // Show close button when the drawer is open
+        }
+    }
+}
+
+
+
+
+
+.navbar {
+  
+
+    margin-bottom: 12vh;
+    background: $dark-blue;
+    margin: auto;
+    padding-right: 5%;
+    .logo-text{
+        color: $light-grey;
+        font-size: 3vw;
+        .dot{
+            color: $orange;
+        }
+    }
+    .logo-animation{
+        margin-left: 5%;
+        width: 3%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        .first{
+            width: 75%;
+            background: $orange;
+            height: 19%;
+            margin-top: 10%;
+            border-radius: 3px;
+            animation: first-animation 3s ease-in-out infinite;
+        }
+        .second{
+            width: 50%;
+            background: $light-grey;
+            height: 19%;
+            margin-top: 10%;
+            border-radius: 3px;
+            animation: second-animation 3s ease-in-out infinite;
+        }
+        .third{
+            width: 90%;
+            background: $light-blue;
+            height: 19%;
+            margin-top: 10%;
+            border-radius: 3px;
+            animation: third-animation 3s ease-in-out infinite;
+        }
+    }
+    
+    .spacer{
+        flex: 1 1 auto;
+    }
+
+    .logo{
+        margin-left: 3%;
+        width: 10vw;
+    }
+
+    .logo:hover{
+        cursor: pointer;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+
+    .nav-item{
+        color: $light-grey;
+        margin-right: 5px;
+    }
+
+    .nav-item:hover, .nav-item.active{
+        color: $orange;
+        text-decoration: none;
+    }
+
+    #lang-item{
+        flex-direction: row-reverse;
+    }
+      
+    .mobile-menu{
+        background: $dark-blue;
+        color: $light-grey;
+    }
+
+    .mobile-menu:hover, .mobile-menu.active{
+        color: $orange;
+        cursor: pointer;
+    }
+
+}
+
+@keyframes first-animation {
+    0%{
+        width: 75%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 90%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes second-animation {
+    0%{
+        width: 50%;
+    }
+    25%{
+        width: 75%;
+    }
+    50%{
+        width: 90%;
+    }
+    75%{
+        width: 75%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes third-animation {
+    0%{
+        width: 90%;
+    }
+    25%{
+        width: 75%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 75%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+
+
+/* media query for mobile screens */
+ 
+
+  @media (max-width: 1024px) {
+
+    :host ::ng-deep .mat-drawer-container {
+        display: unset;
+      }
+
+      ::ng-deep .mat-drawer-content {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+
+    mat-drawer-content {
+        height: 3.3em !important;
+        position: sticky;
+        position: -webkit-sticky;
+      }
+
+      mat-drawer-container {
+        position: inherit !important ;
+      }
+      
+    .mat-drawer {
+        width: 170px;
+        padding-bottom: 15px;
+      }
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .navbar .logo-animation{
+        margin-left: 0%;
+        width: 6%; 
+    
+  
+        .first,
+        .second,
+        .third {
+            width: 50%;
+        }
+        
+
+
+  }
+  
+}
+  

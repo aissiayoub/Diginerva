@@ -1,0 +1,40 @@
+@import "../../../app.component.scss";
+
+.story {
+  margin-left: 15%;
+  margin-bottom: 5%;
+  .story-head {
+    color: $dark-blue;
+    margin-top: 5%;
+    font-size: 30px;
+    margin-bottom: 5%;
+  }
+  .story-text {
+    margin-right: 17%;
+    padding-top: 0;
+    p {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .story {
+    .story-text {
+      p {
+        padding-right: 10%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .story {
+    .story-text {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}

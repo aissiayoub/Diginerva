@@ -1,0 +1,49 @@
+<div class="footer-container">
+    <div class="footer">
+        <div class="footer-left">
+            <p>{{ "footer.desc" | translate }}<strong>{{ "footer.project" | translate }}</strong><strong class="point">.</strong></p>
+            <p>DIGINERVA<span class="point">.</span></p>
+        </div>
+        <div class="footer-right">
+            <form class="footer-form" [formGroup]="contactForm">
+                <mat-form-field class="form-field">
+                    <mat-label>{{ "footer.form.full_name" | translate}}</mat-label>
+                    <input matInput formControlName="fullName">
+                </mat-form-field><br>
+                <mat-form-field class="email-field">
+                    <mat-label>{{ "footer.form.email" | translate}}</mat-label>
+                    <input matInput formControlName="email">
+                </mat-form-field>
+                <mat-form-field class="phone-number-field">
+                    <mat-label>{{ "footer.form.phone_number" | translate}}</mat-label>
+                    <input matInput formControlName="phone">
+                </mat-form-field><br>
+                <mat-form-field class="form-field">
+                    <mat-label>{{ "footer.form.message" | translate}}</mat-label>
+                    <textarea matInput formControlName="message"></textarea>
+                </mat-form-field><br>
+                <button mat-button class="submit-form">
+                    {{ "footer.send" | translate}}
+                    <mat-icon aria-hidden="false" aria-label="Example home icon" svgIcon="send"></mat-icon>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="lower-footer">
+        <mat-toolbar class="navbar">
+            <button class="lang-item" id="lang_item" mat-button [matMenuTriggerFor]="menu">{{ "common.language" | translate }}
+                <mat-icon aria-hidden="false" aria-label="Example home icon" svgIcon="expand_more"></mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" id="langMenu">
+                <button id="lang" mat-menu-item (click)="changeLang('en')">EN</button>
+                <button id="lang" mat-menu-item (click)="changeLang('fr')">FR</button>
+            </mat-menu>
+            <div class="navbar-items">
+                <a class="nav-item" mat-button routerLink="">{{ "footer.useful-link.terms" | translate }}</a>
+                <a class="nav-item" mat-button routerLink="about">{{ "footer.useful-link.policy" | translate }}</a>
+                <a class="nav-item" mat-button routerLink="services">{{ "footer.useful-link.security" | translate }}</a>
+            </div>
+            <span class="copyrights">{{ year }} Diginerva © {{ "footer.copyright" | translate }}</span>
+        </mat-toolbar>
+    </div>
+</div>

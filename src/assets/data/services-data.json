@@ -1,0 +1,27 @@
+[
+    {
+        "imagePath": "../../../assets/media/home/services/it-consulting.svg",
+        "title": "pages.home.services.title.it_consulting",
+        "description":"pages.home.services.description.it_consulting"
+    },
+    {
+        "imagePath": "../../../assets/media/home/services/technology.svg",
+        "title": "pages.home.services.title.technology",
+        "description":"pages.home.services.description.technology"
+    },
+    {
+        "imagePath": "../../../assets/media/home/services/solutions-integration.svg",
+        "title": "pages.home.services.title.solutions_integration",
+        "description":"pages.home.services.description.solutions_integration"
+    },
+    {
+        "imagePath": "../../../assets/media/home/services/cybersecurity.svg",
+        "title": "pages.home.services.title.cybersecurity",
+        "description":"pages.home.services.description.cybersecurity"
+    },
+    {
+        "imagePath": "../../../assets/media/home/services/marketing-digital.svg",
+        "title": "pages.home.services.title.digital_marketing",
+        "description":"pages.home.services.description.digital_marketing"
+    }
+]

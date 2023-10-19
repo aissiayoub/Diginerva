@@ -1,0 +1,345 @@
+@import "../../../app.component.scss";
+
+
+
+.hero-content{
+    font-family: $primary-font;
+    background: $dark-blue;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    min-height: 65vh;
+    .left-side{
+        .upper{
+            margin-top: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .title {
+                display: grid;
+                grid-template-columns: 1fr;
+                h1{
+                font-size: 6vw;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke: 1px $light-grey;
+                margin: 0;
+                padding: 0px 0px 0px 75px;
+                font-weight: bold;
+                grid-row-start: 1;
+                grid-column-start: 1;
+                --stack-height: calc(100% / var(--stacks) - 1px);
+                --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+                --clip-top: calc(var(--stack-height) * var(--index));
+                --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+                clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+                animation: stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 1s ease infinite 1s alternate-reverse;
+               }
+            }
+            .play{
+                width: 6rem;
+                height: 6rem;
+                margin-left: 20rem;
+                background: $orange;
+                box-shadow: 0 0 0 0 rgba(222, 131, 77, 1);
+                animation: pulse 2s infinite;
+                .icon{
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
+        }
+        .btns{
+            margin-top: 3rem;
+            .first-btn, .second-btn, .third-btn{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                font-size: 1vw;
+                margin-left: 75px;
+                font-weight: bold;
+                width: 200px;
+                height: 50px;
+                background: $orange;
+                color: $light-grey;
+            }
+        }
+    }
+
+    .right-side{
+        flex: 1;
+        position: relative;
+        width: 30%;
+        height: 400px;
+        .design-illustration{
+            background: #323749;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px #323749;
+            height: 200px;
+            width: 150px;
+            position: absolute;
+            animation-name: float;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            z-index: 3;
+        }
+        .security-illustration{
+            background: #323749;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px #323749;
+            height: 200px;
+            width: 150px;
+            position: absolute;
+            top: 0px;
+            left: 150px;
+            animation-name: float;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            z-index: 2;
+        }
+        .digital-illustration{
+            background: #323749;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px #323749;
+            height: 200px;
+            width: 150px;
+            position: absolute;
+            top: 0px;
+            left: 150px;
+            animation-name: float;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            z-index: 1;
+        }
+    }
+    iframe{
+        padding: 0px;
+        background: red;
+    }
+
+    @media only screen and (max-width> 1420px) {
+        .hero-content{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+#videoPlayer{
+    width: 53rem;
+    height: 30rem;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(222, 131, 77, 0.7);
+      }
+      
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(222, 131, 77, 0);
+      }
+      
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(222, 131, 77, 0);
+      }
+}
+  
+@keyframes float {
+    0% {
+        top: 0px;
+        left: 150px;
+    }
+    33% {
+        top: 150px;
+        left: 0px;
+    }
+    66%{
+        top: 150px;
+        left: 300px;
+    }
+    100% {
+        top: 0px;
+        left: 150px;
+    }
+}
+
+@keyframes stack {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%);
+      text-shadow: -10px 15px 0 $orange, 10px -15px 0 $light-blue;
+    };
+    60% {
+      opacity: 0.5;
+      transform: translateX(50%);
+    }
+    80% {
+      transform: none;
+      opacity: 1;
+      text-shadow: -10px 15px 0 $orange, 10px -15px 0 $light-blue;
+    }
+    100% {
+      text-shadow: none;
+    }
+}
+  
+@keyframes glitch {
+    0% {
+        text-shadow: -8px 12px 0 $orange, 8px -12px 0 $light-blue;
+      transform: translate(var(--glitch-translate));
+    }
+    4% {
+        text-shadow: -8px 12px 0 $orange, 8px -12px 0 $light-blue;
+    }
+    8%, 50% {  text-shadow: none; transform: none; }
+
+    51% {
+        text-shadow: 0 12px -8px $light-blue, 0 -8px 12px $orange;
+      transform: translate(var(--glitch-translate));
+    }
+    55% {
+        text-shadow: 0 12px -8px $light-blue, 0 -8px 12px $orange;
+    }
+    59%, 100% {  text-shadow: none; transform: none; }
+}
+
+@media (max-width:1050px){
+    #videoPlayer{
+        width: 40rem;
+        height: 30rem;
+    }
+}
+
+@media (max-width:1037px){
+    .hero-content{
+        .left-side{
+            .upper{
+                .title{
+                    h1{
+                        font-size: 5rem;
+                    }
+                }
+                .play{
+                    margin-left: -.8rem;
+                }
+            }
+            .btns{
+                margin-top: 3rem;
+                .first-btn, .second-btn, .third-btn{
+                    font-size: .8rem;
+                }
+                
+            }
+        }
+    }
+}
+
+@media (max-width:840px){
+    .hero-content{
+        .left-side{
+            .upper{
+                flex-direction: column;
+                gap: 12px;
+                .title{
+                    width: 100%;
+                }
+            }
+            .btns{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 100%;
+                .first-btn, .second-btn, .third-btn{
+                    font-size: .9rem;
+                    margin-left: 60px;
+           
+                }
+            }
+        }
+    }
+    #videoPlayer{
+        width: 31rem;
+        height: 26rem;
+    }
+}
+
+@media (max-width :785px){
+    .hero-content{
+        .left-side{
+        width: 100%;
+
+            .btns{
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                .first-btn, .second-btn, .third-btn{
+                    font-size: 1rem;
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:716px){
+    .hero-content{
+        .left-side{
+            .upper{
+                .title{
+                    h1{
+                       font-size: 4rem; 
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}
+@media (max-width:611px){
+    .hero-content{
+        .left-side{
+            .upper{
+                .title{
+                    width: 100%;
+                    h1{
+                        width: 100%;
+                       font-size: 12vw; 
+                       box-sizing: border-box;
+                       padding-left: 7px;
+                    }
+                    
+                }
+            }
+            .btns{
+                flex-direction: column;
+                .first-btn, .second-btn{
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+                .third-btn{
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    #videoPlayer{
+        width: 25rem;
+        height: 12.5rem;
+    }
+ 
+}
+
+@media (max-width:455px){
+    #videoPlayer{
+        width: 20rem;
+        height: 12.5rem;
+    }
+}

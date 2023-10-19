@@ -1,0 +1,11 @@
+@import "../../../app.component.scss";
+.card{
+    margin: auto;
+    width: 80%;
+    padding: 25px;
+    background: $dark-blue;
+
+    .read-more-btn{
+        background: $orange;
+    }
+}

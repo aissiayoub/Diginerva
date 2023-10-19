@@ -1,0 +1,294 @@
+{
+  "common": {
+      "language": "Français",
+      "lang": "FR",
+      "discover_more": "Découvrir plus"
+  },
+  "header": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "contact": "Contact",
+    "strategy":"Notre stratégie"
+  },
+  "footer": {
+      "desc": "Contactez nous pour débuter votre",
+      "project": " projet",
+      "copyright": "Tous droits réservés",
+      "send": "Envoyer",
+      "useful-link": {
+          "terms": "Conditions d'utilisation",
+          "policy": "Politique de confidentialité",
+          "security": "Sécurité"
+      },
+      "form": {
+          "full_name": "Nom complet",
+          "phone_number": "Numéro de téléphone",
+          "email": "Email",
+          "message": "Message"
+      }
+  },
+  "pages": {
+      "home": {
+          "title": "Accélération Digitale",
+          "description": "Diginerva est un cabinet de conseil, avec pour mission principale l'accélération des projets de transformation digitale de ses clients au Maroc puis à l'échelle du continent africain. Cette mission concerne davantage les projets sur les technologies avancées telles que le web, le mobile, l'UI/UX, la cybersécurité, le marketing digital et le business consulting.",
+          "btns": {
+              "become_client": "Devenir client",
+              "join_us": "Nous rejoindre",
+              "sponsor_us": "Nous sponsoriser"
+          },
+          "infos": {
+              "title": {
+                  "our_vision": "Notre vision",
+                  "our_mission": "Notre mission"
+              },
+              "description": {
+                  "our_vision": "Notre vision est que le Maroc soit un leader en Afrique en tirant parti des dernières technologies numériques pour améliorer la vie de nos clients et créer un développement économique durable. Nous nous efforçons de rassembler les esprits les plus novateurs pour favoriser une culture numérique innovante et dynamique.",
+                  "our_mission": "Notre mission consiste à accompagner nos clients pour transformer et gérer leur business à l’ère du digital dans des différents aspects : production, service client, marketing, finance, ressources humaines, passant par la communication interne et jusqu’aux interactions avec les parties prenantes de l’entreprise (prospects, clients, collaborateurs, actionnaires, fournisseurs…). L’objectif est d’intégrer et d’utiliser la technologie pour lever les points de blocage ou les difficultés rencontrées par nos clients afin d’améliorer ses services et ses productivités."
+              }
+          },
+          "our_services": "Nos Services",
+          "services": {
+              "title": {
+                  "it_consulting": "IT Consulting",
+                  "technology": "Technologie",
+                  "solutions_integration": "Intégration des solutions",
+                  "cybersecurity": "Cybersecurité",
+                  "digital_marketing": "Marketing Digital"
+              },
+              "description": {
+                  "it_consulting": "Afin de vous permettre une transformation digitale pérenne, aboutie et durable, Nous vous accompagnons à définir votre stratégie digitale et partageons avec vous les bonnes pratiques propices à l'émergence d’idées novatrices pour la mise en place de cette dernière.",
+                  "technology": "En se basant sur des technologies de dernière génération, nous vous aiderons à concevoir et développer les meilleures solutions et applications pour des cas précis.",
+                  "solutions_integration": "Nous vous accompagnons dans toutes les phases de votre projet de solutions intégrées de gestion d’entreprise.",
+                  "cybersecurity": "Les menaces modernes sont complexes et doivent être prises très au sérieux. Une seule violation de données ou une attaque de ransomware peut causer d'énormes dommages financiers, juridiques et de réputation. Pour aider nos clients à se protéger, des consultants en sécurité Offensive sont prêts pour auditer votre système d’information.",
+                  "digital_marketing": "Le marketing digital change tout : commerce, culture et communauté. Nous travaillons au point de rencontre des nouvelles technologies et des nouvelles idées, pour créer des canaux et des campagnes commerciales stratégiques et puissants qui vous amènent au bon public, en développant votre marque et en apportant des revenus."
+              }
+          },
+          "join_us": {
+              "description": "Rejoignez une grande communauté de talents et boostez votre carrière.",
+              "btn": "Rejoignez-nous"
+          },
+          "our_talents": {
+              "title": "Nos Talents",
+              "description": "Notre équipe est composée d'un groupe diversifié de talents possédant un éventail de compétences commerciales, techniques et fonctionnelles. Nous nous efforçons de créer des solutions innovantes et créatives pour obtenir les meilleurs résultats possibles pour nos clients. "
+          },
+          "our_articles": {
+              "title": "Nos Articles",
+              "read_more": "Lire la suite"
+          }
+      },
+      "about_us": {
+          "our_values":{
+              "title":"Nos valeurs",
+              "description":"Chez Diginerva, nous valorisons la confiance, la durabilité, la transparence, l'agilité et l'audace. Nous avons intégré ces principes dans l'ADN de notre entreprise.",
+              "values":{
+                  "value1":{
+                      "title":{
+                          "innovation":"Innovation"
+                      },
+                      "description":{
+                          "innovation":"Nos solutions sont simples, claires, uniques et surtout efficaces. L'objectif est d'offrir aux clients des solutions accessibles et d'apporter une réelle valeur ajoutée sur le marché."
+                      }
+                  }
+              }
+          },
+          "meet_our_team": {
+              "title": "Découvrez Notre Equipe",
+              "team": {
+                  "team_name": {
+                      "team_name1": "Adil El Nassiri",
+                      "team_name2": "Adil El Nassiri",
+                      "team_name3": "Adil El Nassiri",
+                      "team_name4": "Adil El Nassiri",
+                      "team_name5": "Adil El Nassiri",
+                      "team_name6": "Adil El Nassiri"
+                  },
+                  "job": {
+                      "software_engineer": "Ingénieur Informatique"
+                  }
+              }
+          },
+          "join_our_team": {
+              "title": "Rejoignez notre équipe",
+              "description": "Diginerva est une société de conseil, ayant pour mission principale l'accélération des projets de transformation numérique de ses clients au Maroc, puis à l'échelle du continent africain.",
+              "join_us": "Rejoignez-nous"
+          },
+          "missions": {
+              "title": {
+                  "our_mission": "Notre mission est",
+                  "acceleration": "l'accélération",
+                  "of": "de",
+                  "digital": "la transformation numérique"
+              },
+              "description": {
+                  "diginerva": "Diginerva est une société de conseil, ayant pour mission principale",
+                  "acceleration": "l'accélérer des projets de transformation numérique de ses clients au ",
+                  "morocco": " Maroc, puis de déployer cette approche à l'échelle du continent africain. "
+              }
+          },
+          "story": {
+              "title": "Notre histoire",
+              "description": {
+                  "paragraph1": "Diginerva est une société de conseil, ayant pour mission principale l'accélérer des projets de transformation numérique de ses clients au  Maroc, puis de déployer cette approche à l'échelle du continent africain.",
+                  "paragraph2": "Diginerva est une société de conseil, ayant pour mission principale l'accélérer des projets de transformation numérique de ses clients au  Maroc, puis de déployer cette approche à l'échelle du continent africain. Diginerva est une société de conseil, ayant pour mission principale l'accélérer des projets de transformation numérique de ses clients au  Maroc, puis de déployer cette approche à l'échelle du continent africain.",
+                  "paragraph3": "Diginerva est une société de conseil, ayant pour mission principale l'accélérer des projets de transformation numérique de ses clients au  Maroc, puis de déployer cette approche à l'échelle du continent africain."
+              }
+          }
+      },
+      "our_strategy":{
+        "discovring":{
+            "title":"Découvrir notre stratégie",
+            "description" : "Chez Diginerva, nous accordons de la valeur à la confiance, à la durabilité, à la transparence, à l'agilité et à l'audace.",
+            "cards":{
+                "card_title":"Élaborez votre stratégie"
+            }
+        },
+        "strategy":{
+           "card1":{
+            "title":{
+                "business_plan": "Créer un plan d'entreprise"
+            },
+            "description":{
+                "business_plan": "La description de votre entreprise est l'un des éléments les plus importants de votre plan d'entreprise car elle introduit les objectifs et les possibilités."
+            }
+           },
+           "card2":{
+            "title":{
+                "business_plan": "Créer un plan d'entreprise"
+            },
+            "description":{
+                "business_plan": "La description de votre entreprise est l'un des éléments les plus importants de votre plan d'entreprise car elle introduit les objectifs et les possibilités."
+            }
+           },
+           "card3":{
+            "title":{
+                "business_plan": "Créer un plan d'entreprise"
+            },
+            "description":{
+                "business_plan": "La description de votre entreprise est l'un des éléments les plus importants de votre plan d'entreprise car elle introduit les objectifs et les possibilités."
+            }
+           },
+           "card4":{
+            "title":{
+                "business_plan": "Créer un plan d'entreprise"
+            },
+            "description":{
+                "business_plan": "La description de votre entreprise est l'un des éléments les plus importants de votre plan d'entreprise car elle introduit les objectifs et les possibilités."
+            }
+           },
+           "card5":{
+            "title":{
+                "business_plan": "Créer un plan d'entreprise"
+            },
+            "description":{
+                "business_plan": "La description de votre entreprise est l'un des éléments les plus importants de votre plan d'entreprise car elle introduit les objectifs et les possibilités."
+            }
+           }
+        },
+        "our_mission":{
+            "title":"Notre mission",
+            "paragraph1":"Notre mission est de soutenir nos clients afin de transformer et gérer leur entreprise à l'ère numérique dans différents domaines : production, service client, marketing, finances, ressources humaines, y compris la communication interne et les interactions avec les parties prenantes de l'entreprise (prospects, clients, employés, actionnaires, fournisseurs, etc.).",
+            "paragraph2":"L'objectif est d'intégrer et d'utiliser la technologie pour éliminer les points de blocage ou les difficultés rencontrées par nos clients afin d'améliorer leurs services et leur productivité."
+        },
+        "our_vision":{
+            "title":"Notre vision",
+            "paragraph1":"Notre vision est que le Maroc devienne un leader en Afrique en exploitant les dernières technologies numériques pour améliorer la vie de nos clients et créer un développement économique durable.",
+            "paragraph2":"Nous nous efforçons de rassembler les esprits les plus innovants pour favoriser une culture numérique novatrice et dynamique."
+        }
+    },
+    "contact": {
+        "title": {
+            "connect": "Connectez-vous avec",
+            "diginerva": "DIGINERVA"
+        },
+        "description":{
+            "text1":"Connectez-vous avec nous aujourd'hui !",
+            "text2":"Commençons une conversation et faisons avancer les choses ensemble."
+        },
+        "interested_by":{
+            "title":"Si vous êtes intéressé par",
+            "items":{
+                "cyber_security":"Cybersécurité ",
+                "graphic_design":"Design Graphique",
+                "consulting":"Consultation",
+                "mobile_dev":"Développement Mobile",
+                "ui_design":"Conception UI"
+            }
+        },
+        "title2":{
+            "feel_free":"N'hésitez pas à vous",
+            "connect":"CONNECTER",
+            "with_us":"avec nous"
+        },
+        "form": {
+            "full_name":{
+                "label":"Nom complet",
+                "input_placeholder":"Entrez votre nom complet"
+            },
+            "phone_number":{
+                "label":"Téléphone",
+                "input_placeholder":"Entrez le numéro de téléphone"
+            },
+            "message":{
+                "label":"Message",
+                "input_placeholder":"N'hésitez pas à expliquer vos besoins spécifiques!"
+            },
+            "btn_submit":"Envoyer"
+        }
+    },
+        "generic_service":{
+            "hero":{
+                "title":{
+                    "make":"Rendez vos",
+                    "apps":"apps sécurisées",
+                    "with_us":"avec nous"
+                },
+                "description":{
+                    "modern":"Les menaces modernes sont complexes et doivent être prises très",
+                    "seriously":"au sérieux"
+                },
+                "btn":"Commencer"
+            },
+            "cyber_threat":{
+               "title":"Soyez conscient des menaces cybernétiques",
+               "description":{
+                "paragraph1":"Les menaces modernes sont complexes et doivent être prises très au sérieux.",
+                "paragraph2":"Une seule violation de données ou une attaque par rançongiciel peut causer d'énormes dommages financiers, juridiques et de réputation.",
+                "paragraph3":"Pour aider nos clients à se protéger, nos consultants en sécurité offensive sont prêts à auditer votre système d'information."
+               }
+            },
+            "security_cards":{
+                "card1":{
+                    "title":"Sécurité mobile",
+                    "description":{
+                        "paragraph1":"Souvent négligés, les appareils mobiles tels que les tablettes et les smartphones ont accès aux données de l'entreprise, exposant ainsi l'entreprise à des menaces provenant d'applications malveillantes, d'exploits zero-day, d'attaques de phishing et d'attaques par messagerie instantanée (IM).",
+                        "paragraph2":{
+                            "underline":"Sécurité mobile",
+                            "text":"La sécurité mobile permet de prévenir ces attaques et de sécuriser les systèmes d'exploitation et les appareils contre le rooting et le jailbreaking. Lorsqu'elle est intégrée à une solution de gestion des appareils mobiles (MDM), elle permet aux entreprises de s'assurer que seuls les appareils mobiles conformes ont accès aux actifs de l'entreprise."
+                        }
+                    }
+                },
+                "card2":{
+                    "title":"Zero Trust",
+                    "description":{
+                        "paragraph1":"Le modèle de sécurité traditionnel est axé sur le périmètre, construisant des murs autour des actifs précieux d'une organisation comme un château. Cependant, cette approche présente plusieurs problèmes, tels que le potentiel de menaces internes et la dissolution rapide du périmètre réseau.",
+                        "paragraph2":{
+                            "underline":"Zero trust",
+                            "text":"À mesure que les actifs d'entreprise se déplacent hors site dans le cadre de l'adoption du cloud et du travail à distance, une nouvelle approche de la sécurité est nécessaire. Zero trust adopte une approche plus granulaire de la sécurité, protégeant les ressources individuelles grâce à une combinaison de micro-segmentation, de surveillance et de mise en œuvre de contrôles d'accès basés sur les rôles."
+                        }
+                    }
+                },
+                "card3":{
+                    "title":"Sécurité mobile",
+                    "description":{
+                        "paragraph1":"Souvent négligés, les appareils mobiles tels que les tablettes et les smartphones ont accès aux données de l'entreprise, exposant ainsi l'entreprise à des menaces provenant d'applications malveillantes, d'exploits zero-day, d'attaques de phishing et d'attaques par messagerie instantanée (IM).",
+                        "paragraph2":{
+                            "underline":"Sécurité mobile",
+                            "text":"La sécurité mobile permet de prévenir ces attaques et de sécuriser les systèmes d'exploitation et les appareils contre le rooting et le jailbreaking. Lorsqu'elle est intégrée à une solution de gestion des appareils mobiles (MDM), elle permet aux entreprises de s'assurer que seuls les appareils mobiles conformes ont accès aux actifs de l'entreprise."
+                        }
+                    }
+                }
+            }
+        }
+  }
+}

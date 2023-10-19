@@ -1,0 +1,103 @@
+@import "../../../app.component.scss";
+
+.container {
+    width: 100%;
+    padding-left: 7.2%;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    background-color: $dark-blue;
+
+    .title {
+        color: $orange;
+        margin: 0;
+    }
+
+    .description {
+        font-size: 1.3rem;
+        width: 80%;
+        color: $light-grey;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 25px;
+        margin-left: -7.2%;
+        margin-top: 3rem;
+        .card-item {
+            padding: 33px 55px;
+            background-color: $midnight-blue;
+            text-align: center;
+            justify-self: center;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            position: relative;
+
+            .card-img {
+                width: 10rem;
+                height: 10rem;
+            }
+
+            .card-title {
+                color: $light-grey;
+                font-weight: 500;
+            }
+        }
+
+        .card-item::before {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            background: $light-grey;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            transition: all 1s;
+        }
+
+        .card-item:hover::before {
+            width: 100%;
+        }
+
+        .card-item:hover {
+            transform: rotateX(360deg);
+            transform: scale(1.05);
+
+            .card-title {
+                color: $midnight-blue;
+                font-weight: 600;
+
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .container {
+        padding-left: 9%;
+
+        .description {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width:414px) {
+    .container {
+        .cards {
+            .card-item {
+                .card-img {
+                    width: 8rem;
+                    height: 8rem;
+                }
+            }
+        }
+    }
+}

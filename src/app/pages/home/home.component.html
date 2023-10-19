@@ -1,0 +1,28 @@
+<div class="home">
+    <app-hero></app-hero>
+    <div class="info">
+        <div *ngFor="let item of miniInfos; let isOdd = odd; let isEven = even;">
+            <app-mini-card [title]="item.title" [description]="item.description" [pathImage]="item.imagePath" [left]="isEven" [right]="isOdd"></app-mini-card>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+     <h2>{{ "pages.home.our_services" | translate}}</h2>
+    <div class="mini-services">
+        <div *ngFor="let item of miniServices">
+            <app-mini-services-cards [title]="item.title" [description]="item.description" [pathImage]="item.imagePath"></app-mini-services-cards>
+        </div>
+    </div>
+    <div class="talent" [ngStyle]="{
+        'background': 'linear-gradient(rgba(222, 131, 77, 0.7), rgba(45, 50, 67, 1)), url(../../../assets/media/home/talents.jpg)',
+        'background-size': 'cover',
+        'background-position': 'center',
+        'background-repeat': 'no-repeat'
+        }">
+        <app-our-talents></app-our-talents>
+    </div>
+    <!-- <mat-divider></mat-divider> -->
+    <!--<div class="articles">
+        <h2>{{ "pages.home.our_articles.title" | translate }}</h2>
+        <app-our-articles></app-our-articles>
+    </div>-->
+</div> 

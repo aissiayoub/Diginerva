@@ -1,0 +1,10 @@
+<div class="container">
+    <h1 class="title">{{ "pages.our_strategy.discovring.title" | translate }}</h1>
+    <p class="description">{{ "pages.our_strategy.discovring.description" | translate }}</p>
+    <div class="cards">
+        <div class="card-item" *ngFor="let card of cards">
+            <img [src]="card.imagePath" class="card-img">
+            <p class="card-title">{{card.title | translate}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,153 @@
+@import "../../../app.component.scss";
+
+* {
+    margin: 0;
+}
+
+.hero-content {
+    color: $light-grey;
+    display: flex;
+    background-color: $dark-blue;
+    flex-wrap: nowrap;
+    padding: 4rem 8rem 40px 8rem;
+    box-sizing: border-box;
+
+    .left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: space-evenly;
+
+        .title {
+            font-size: 3.9vw;
+
+            .orange-text {
+                color: $orange;
+            }
+        }
+
+        .description {
+            font-size: 1.7rem;
+            width: 90%;
+            line-height: 1.5;
+
+            .underline {
+                border-bottom: 3px solid $orange;
+
+            }
+        }
+
+        .get-started-btn {
+            border: none;
+            background-color: $light-grey;
+            color: $dark-blue;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            border-radius: 40px;
+            font-size: 1.2rem;
+            width: 16rem;
+           cursor: pointer;
+           transition: all 0.2s ease-in;
+        }
+        .get-started-btn:hover{
+            background-color: $orange;
+            color: $light-grey;
+            flex-direction: row-reverse;
+        }
+    }
+
+    .right {
+        width: 50%;
+
+        .img {
+            width: 100%;
+            height: auto;
+            border-radius: 25px;
+        }
+        .img:hover{
+            transform: scale(1.1);
+        }
+    }
+
+}
+
+
+@media(min-width:925px) and (max-width:1220px) {
+    .hero-content {
+        padding: 4rem 2rem 40px 2rem;
+
+        .left {
+            .get-started-btn {
+                font-size: 1rem;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width:924px) {
+
+    .hero-content {
+        padding: 4rem 2rem 40px 2rem;
+
+        .left {
+            gap: 15px;
+
+            .get-started-btn {
+                font-size: 1rem;
+                margin-top: 0;
+            }
+        }
+
+        .right {
+
+            .img {
+                margin-top: 1.5rem;
+
+            }
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .hero-content {
+        flex-direction: column;
+        gap: 44px;
+        padding: 40px 5%;
+
+        .left {
+            width: 100%;
+            align-items: center;
+
+            .title {
+                text-align: center;
+                font-size: 3.2rem;
+            }
+
+            .description {
+                align-self: flex-start;
+                text-align: center;
+                width: 100%;
+            }
+
+            .get-started-btn {
+                align-self: center;
+            }
+        }
+
+        .right {
+            width: 100%;
+            text-align: center;
+
+            .img {
+                width: 90%;
+
+            }
+        }
+    }
+}

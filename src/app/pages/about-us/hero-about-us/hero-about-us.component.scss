@@ -1,0 +1,230 @@
+@import "../../../app.component.scss";
+
+.mission{
+    background-color: $dark-blue;
+    margin-top: -5%;
+    .mission-center {
+        padding-top: 9%;
+        padding-left: 15%;
+        padding-right: 15%;
+        color: $light-grey;
+        font-size: 4.2vw;
+        height: 40vh; 
+
+        .orange-text {
+            color: $orange;
+        }
+        .point {
+            color: $orange;
+          }
+
+      }
+      
+      .center-text {
+        color: $light-grey;
+        font-size: 28px;
+        padding-left: 15%;
+        padding-top: 25px;
+        margin-bottom: 5%;
+      }
+      
+    .img-container {
+        align-items: stretch;
+        display: flex;
+        margin-top: 20px;
+
+        padding-bottom: 50px;
+
+        img {
+            flex: 1;
+          }
+
+        .image {
+            width: 350px;
+            height: 230px;
+            margin: 10px 20px; 
+            border-radius: 15px;
+          }
+          .no-margin {
+            margin-left: 0 !important;
+            padding-left: 0;
+        }
+        
+        .with-margin {
+            margin-right: 0 !important;
+            padding-right: 0;
+        }
+          
+        .no-border-radius-left {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+          }
+          
+          .no-border-radius-right {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+
+          .fade-image {
+            flex: 1;
+            max-width: calc(50% - 10px);
+            height: auto;
+            border-radius: 10px;
+            transition: opacity 0.3s ease-in-out;
+          }
+          
+          .zoom-image {
+            flex: 1;
+            max-width: calc(50% - 10px);
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+          }
+
+          .zoom-in {
+            transform: scale(0.95); 
+          }
+      }
+
+
+      .img-container-mobile {
+        flex-direction: column;
+        align-items: center;
+        max-width: 80%;
+        margin: 0 auto;
+        .image {
+            width: 630px;
+            height: 415px;
+            border-radius: 15px;
+            padding-bottom: 4%;
+            flex: none;
+            margin-left: 0px;
+          }
+        
+        .no-margin {
+            margin-left: auto;
+          }
+          .with-margin{
+            margin-left:0 ;
+            margin-right: 2.6% !important;
+          }
+
+          .no-border-radius-left {
+            border-bottom-left-radius: 15px !important;
+          }
+          
+          .no-border-radius-right {
+            border-bottom-right-radius: 15px !important;
+          }
+       
+      }
+}
+
+@media (max-width: 2040px) {
+    .mission{
+        .mission-center{
+            height: auto;
+
+        }
+        .center-text{
+            span {
+                margin-bottom: 20px;
+              }
+        }
+    }   
+  }
+
+  @media (max-width: 1300px) {
+    .mission{
+        .center-text{
+            font-size: 1.8vw;
+            padding-right: 10%;
+        }
+    }   
+  }
+
+  @media (min-width: 900px) and (max-width: 1130px){
+    .mission{
+        .mission-center {
+            font-size: 4vw;
+        }
+        .img-container{
+          .zoom-in {
+            transform: scale(1.1); 
+          }
+        }
+        .center-text{
+            font-size: 2vw;
+            padding-right: 10%;
+        }
+    }
+ }
+
+
+
+ @media (max-width: 900px){
+    .mission{
+        .center-text{
+            font-size: 1.2rem;
+            padding-right: 10%;
+        }
+        .img-container{
+          .zoom-in {
+            transform: scale(1.1); 
+          }
+        }
+    }
+ }
+
+ @media (min-width: 500px) and (max-width: 740px) {
+    .mission{
+      .center-text{
+        font-size: 1.08rem;
+        }
+        .img-container{
+          padding-left: 5%;
+            .image {
+                width: 420px;
+                height: 280px ;
+            }
+        }
+    }
+}
+
+  @media (max-width: 500px) {
+    .mission{
+        margin-top: -7%;
+        .mission-center {
+            font-size: 6vw;
+        }
+        .center-text{
+            font-size: 3.4vw;
+        }
+        .img-container{
+          padding-left: 5%;
+            .image {
+                width: 270px ;
+                height: 170px ;
+              }
+        }
+    }
+    
+    
+}
+  
+@media (max-width: 300px) {
+    .mission{
+        .center-text{
+            font-size: 4vw;
+        }
+
+        .img-container{
+            .image {
+                width: 185px ;
+                height: 136px ;
+              }
+        }
+    }
+   
+}
+  

@@ -1,0 +1,35 @@
+<div class="hero-content" [ngStyle]="{
+    'background': 'linear-gradient(rgba(45, 50, 67, 1), rgba(222, 131, 77, 0.7)), url(../../../assets/media/home/hero/background.webp)',
+    'background-size': 'cover',
+    'background-position': 'center',
+    'background-repeat': 'no-repeat'
+    }">
+    <div class="left-side">
+        <div class="upper">
+            <div class="title" style="--stacks: 3;">
+                <h1 style="--index: 0;">DiGiTAL<br>ACCELERATION</h1>
+                <h1 style="--index: 1;">DiGiTAL<br>ACCELERATION</h1>
+                <h1 style="--index: 2;">DiGiTAL<br>ACCELERATION</h1>
+            </div>
+            <div >
+                <ng-template #videoDialog class="video-container">
+                      <iframe  id="videoPlayer" src="https://www.youtube.com/embed/daZnG9nwKNI"></iframe>
+                </ng-template>
+                <button mat-fab class="play" (click)="openDialog()"><mat-icon aria-hidden="false" class="icon" svgIcon="play"></mat-icon></button>
+            </div>
+        </div>
+        <div class="btns">
+            <button class="first-btn" mat-raised-button>{{ "pages.home.btns.become_client" | translate }}</button>
+            <button class="second-btn" mat-raised-button>{{ "pages.home.btns.sponsor_us" | translate }}</button>
+            <button class="third-btn" mat-raised-button>{{ "pages.home.btns.join_us" | translate }}</button>
+        </div>
+    </div>
+</div>
+<!--
+    [ngStyle]="{
+    'background-image': 'url(../../../assets/media/home/hero/background.svg)',
+    'background-size': 'contain',
+    'background-position': 'bottom',
+    'background-repeat': 'no-repeat'
+    }"
+-->
